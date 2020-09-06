@@ -36,14 +36,20 @@ const useStyles = makeStyles(() => {
     icon: {
       color: "white",
     },
+
+    // MoneyMask
+    dot: {
+      fontSize: "medium",
+      margin: "0 0 6px 4px"
+    }
   };
 });
 
 // Extrair pra outro arquivo (talvez)
 const MoneyMask = () => {
-
+  const classes = useStyles();
   return <div>
-    { [...Array(7)].map((_, __) => <FiberManualRecord/>) }    
+    { [...Array(7)].map((_, __) => <FiberManualRecord className={classes.dot}/> ) }    
     </div>;
 };
 
