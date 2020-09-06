@@ -3,6 +3,7 @@ import MenuInferior from "../../components/MenuInferior";
 import "./objetivos.css";
 import BotaoNovoObjetivo from "../../components/BotaoNovoObjetivo";
 import Titulo from "../../components/Titulo";
+import EditButton from "../../components/EditButton";
 
 const Objetivos = () => {
   const novoObjetivo = () => {
