@@ -21,8 +21,11 @@ const BotaoNovoObjetivo = (props) => {
   const onClick = props.onClick;
 
   return (
-    <Fab onClick={ onClick } className={classes.fab} style={{ background: background, color: iconColor }}>
-      <AddIcon/>
+    <Fab
+      onClick={onClick}
+      className={classes.fab}
+      style={{ background: background, color: iconColor }}>
+      <AddIcon />
     </Fab>
   );
 };
