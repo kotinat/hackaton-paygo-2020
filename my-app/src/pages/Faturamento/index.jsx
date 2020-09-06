@@ -23,9 +23,9 @@ const Faturamento = () => {
       <header>
         <BarraFaturamento />
       </header>
-      <main>
+      <main id="faturamento">
         <CardInfo>
-          <Box alignItems="center">
+          <Box justify="center">
             Média de <strong>R$5.000,00</strong> de faturamento mensal
           </Box>
         </CardInfo>

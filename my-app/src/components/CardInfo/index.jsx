@@ -6,7 +6,8 @@ const CardInfo = ({ children }) => {
     <Card
       style={{
         padding: "8px",
-        margin: " 16px",
+        margin: "16px 0",
+        width: "120px",
       }}
     >
       {children}
