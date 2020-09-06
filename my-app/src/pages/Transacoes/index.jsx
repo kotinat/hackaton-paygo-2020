@@ -7,8 +7,7 @@ import BarraFiltroBotao from "../../components/BarraFiltroBotao";
 const Transacoes = () => {
   return (
     <Box>
-      Transacoes
-      <Valor />
+      <Valor dinheiro="R$ 20.000,00" />
       <FiltroMensal />
       <BarraFiltroBotao />
     </Box>
