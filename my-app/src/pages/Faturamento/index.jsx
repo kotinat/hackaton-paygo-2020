@@ -1,8 +1,17 @@
 import React from "react";
-import Box from "@material-ui/core/Box";
+import MenuInferior from "../../components/MenuInferior";
+import "./faturamento.css";
 
 const Faturamento = () => {
-  return <Box>Faturamento</Box>;
+  return (
+    <body>
+      <header>Faturamento</header>
+      <main></main>
+      <footer>
+        <MenuInferior />
+      </footer>
+    </body>
+  );
 };
 
 export default Faturamento;

@@ -1,8 +1,17 @@
 import React from "react";
-import Box from "@material-ui/core/Box";
+import MenuInferior from "../../components/MenuInferior";
+import "./objetivos.css";
 
 const Objetivos = () => {
-  return <Box>Objetivos</Box>;
+  return (
+    <body>
+      <header>Objetivos</header>
+      <main></main>
+      <footer>
+        <MenuInferior />
+      </footer>
+    </body>
+  );
 };
 
 export default Objetivos;
