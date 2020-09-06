@@ -1,6 +1,7 @@
 import React from "react";
 import { makeStyles } from "@material-ui/core/styles";
 import Box from "@material-ui/core/Box";
+import Faturamento from "../Faturamento";
 
 const useStyles = makeStyles(() => {
   return {
@@ -25,7 +26,7 @@ const BarraFaturamento = () => {
        
     return (
         <Box className={classes.root}>
-            
+            <Faturamento valor="R$ 60.000,00" progresso="30" />
         </Box>
     );
 };
