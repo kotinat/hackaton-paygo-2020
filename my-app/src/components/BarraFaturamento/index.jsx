@@ -13,8 +13,8 @@ const useStyles = makeStyles(() => {
       alignItems: "center",
       backgroundColor: "#242424",
       color: "white",
-      borderBottomRightRadius: "56px",
-      borderBottomLeftRadius: "56px"
+      borderBottomRightRadius: "38px",
+      borderBottomLeftRadius: "38px"
     },
   };
 });
