@@ -25,7 +25,7 @@ const Faturamento = () => {
       </header>
       <main id="faturamento">
         <CardInfo>
-          <Box justify="center">
+          <Box>
             Média de <strong>R$5.000,00</strong> de faturamento mensal
           </Box>
         </CardInfo>
