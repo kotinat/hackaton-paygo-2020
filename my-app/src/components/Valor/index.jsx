@@ -1,7 +1,7 @@
 import React from "react";
 
-const Amount = () => {
+const Valor = () => {
   return <div>2000</div>;
 };
 
-export default Amount;
+export default Valor;
