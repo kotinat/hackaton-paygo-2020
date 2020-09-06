@@ -9,7 +9,7 @@ const Transacoes = () => {
   return (
     <body>
       <header>
-        <Valor dinheiro="R$ 20.000,00" />
+        <Valor dinheiro="R$ 9.000,00" />
       </header>
       <main>
         <FiltroMensal />

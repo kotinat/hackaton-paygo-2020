@@ -20,7 +20,7 @@ const useStyles = makeStyles(() => {
       backgroundColor: "#242424",
       color: "white",
     },
-    wrapper: {
+    horizontal: {
       display: "flex",
     },
     title: {
@@ -40,17 +40,22 @@ const useStyles = makeStyles(() => {
     // MoneyMask
     dot: {
       fontSize: "medium",
-      margin: "0 0 6px 4px"
-    }
+      margin: "18px 2px 0 2px",
+    },
   };
 });
 
 // Extrair pra outro arquivo (talvez)
 const MoneyMask = () => {
   const classes = useStyles();
-  return <div>
-    { [...Array(7)].map((_, __) => <FiberManualRecord className={classes.dot}/> ) }    
-    </div>;
+  return (
+    <Box style={{ display: "flex" }}>
+      <p className={classes.amount}>R$&nbsp;</p>
+      {[...Array(6)].map((_, __) => (
+        <FiberManualRecord className={classes.dot} />
+      ))}
+    </Box>
+  );
 };
 
 const Valor = (props) => {
@@ -64,10 +69,12 @@ const Valor = (props) => {
   return (
     <Box className={classes.root}>
       <p className={classes.title}>Olá, Ronaldo</p>
-      <Box className={classes.wrapper}>
-        <p className={classes.amount}>
-          {moneyVisibility ? props.dinheiro : <MoneyMask/>}
-        </p>
+      <Box className={classes.horizontal}>
+        {moneyVisibility ? (
+          <p className={classes.amount}>{props.dinheiro}</p>
+        ) : (
+          <MoneyMask />
+        )}
 
         <IconButton onClick={changeMoneyVisibility}>
           {moneyVisibility ? (
