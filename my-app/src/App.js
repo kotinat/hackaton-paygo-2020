@@ -1,11 +1,12 @@
 import React from "react";
+import Box from "@material-ui/core/Box";
 
 const App = () => {
   return (
-    <div className="App">
+    <Box className="App">
       teste fonte
       <p>teste fonte 2</p>
-    </div>
+    </Box>
   );
 };
 
