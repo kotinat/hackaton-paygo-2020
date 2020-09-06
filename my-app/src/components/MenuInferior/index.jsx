@@ -29,7 +29,7 @@ const MenuInferior = () => {
   const classes = useStyles();
   const [value, setValue] = useState("/");
 
-  const handleChange = (event, newValue) => {
+  const handleChange = (newValue) => {
     setValue(newValue);
   };
 
@@ -44,7 +44,6 @@ const MenuInferior = () => {
           label="Transações"
           icon={<FormatListBulletedIcon />}
           //   className={classes.selectedIcon}
-
           value={value}
           showLabel
         />
@@ -54,7 +53,6 @@ const MenuInferior = () => {
           label="Faturamento"
           icon={<MonetizationOnIcon />}
           //   className={classes.unselectedIcon}
-
           value={value}
           showLabel
         />

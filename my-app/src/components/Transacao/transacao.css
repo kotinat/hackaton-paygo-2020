@@ -1,0 +1,26 @@
+li {
+  list-style-type: none;
+  padding: 0 16px;
+  margin-bottom: 16px;
+}
+
+p {
+  margin: 0;
+}
+
+#pagamento,
+#valor {
+  font-size: 18px;
+  font-weight: bold;
+}
+
+#descricao,
+#data {
+  font-size: 14px;
+  color: #5d5d5d;
+}
+
+#tag {
+  font-size: 14px;
+  background: lightgreen;
+}
