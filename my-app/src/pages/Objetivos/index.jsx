@@ -5,7 +5,6 @@ import BotaoNovoObjetivo from "../../components/BotaoNovoObjetivo";
 import Titulo from "../../components/Titulo";
 
 const Objetivos = () => {
-
   const novoObjetivo = () => {
     alert("NOVO OBJETIVO");
     // TODO
@@ -17,8 +16,11 @@ const Objetivos = () => {
         <Titulo texto="Meus Objetivos" />
       </header>
       <main>
-
-        <BotaoNovoObjetivo onClick={ novoObjetivo } background="black" color="white" />
+        <BotaoNovoObjetivo
+          onClick={novoObjetivo}
+          background="black"
+          color="white"
+        />
       </main>
       <footer>
         <MenuInferior />
