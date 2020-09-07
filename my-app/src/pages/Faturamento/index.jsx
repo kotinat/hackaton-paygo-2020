@@ -36,7 +36,7 @@ const Faturamento = () => {
         </CardInfo>
         <CardInfo>
           <Box>
-            Fazer rascunho da declaração anual do MEI
+            Lançamentos Declaração anual MEI
             <Button className={classes.button}>Vamos lá!</Button>
           </Box>
         </CardInfo>
