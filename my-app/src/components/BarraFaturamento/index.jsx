@@ -15,12 +15,11 @@ const useStyles = makeStyles(() => {
       alignItems: "center",
       backgroundColor: "#242424",
       color: "white",
-      borderBottomRightRadius: "16px",
-      borderBottomLeftRadius: "16px",
+      borderRadius: "0px 0px 16px 16px",
     },
     menuIcon: {
       color: "white",
-      padding: "16px 16px 0 16px"
+      padding: "16px 16px 0 16px",
     },
   };
 });
@@ -29,13 +28,13 @@ const BarraFaturamento = () => {
   const classes = useStyles();
 
   return (
-    <div >
+    <div>
       <div style={{ textAlign: "left", background: "#242424" }}>
         <MenuRoundedIcon className={classes.menuIcon} />
       </div>
       <Box className={classes.root}>
-          <Faturamento valor="R$ 60.000,00" progresso="30" />
-        </Box>
+        <Faturamento valor="R$ 60.000,00" progresso="30" />
+      </Box>
     </div>
   );
 };

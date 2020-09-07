@@ -24,7 +24,7 @@ const useStyles = makeStyles(() => {
     root: {
       minHeight: "50px",
       margin: "16px",
-      padding: "16px 16px 32px 16px",
+      padding: "16px",
       textAlign: "left",
     },
     name: {

@@ -13,14 +13,23 @@ const Objetivos = () => {
 
   return (
     <body>
-      <header style={{ display: "flex", alignItems: "center" }}>
+      <header
+        style={{
+          display: "flex",
+          alignItems: "center",
+          backgroundColor: "#242424",
+          color: "white",
+          paddingBottom: "16px",
+          borderRadius: "0 0 8px 8px",
+        }}
+      >
         <MenuRoundedIcon style={{ padding: "16px 0 0 16px" }} />
         <Titulo texto="Meus Objetivos" />
       </header>
       <main>
         <div>
           <Objetivo
-            nome="Compra da combi"
+            nome="Compra da kombi"
             data="em 31 de Março de 2021"
             total="10.000,00"
             valorAtual="1.200,00"
@@ -34,7 +43,7 @@ const Objetivos = () => {
             tipo="Profissional"
           />
           <Objetivo
-            nome="Mesa de escretório"
+            nome="Mesa de escritório"
             data="em 5 de Outubro de 2020"
             total="1.000,00"
             valorAtual="850,00"

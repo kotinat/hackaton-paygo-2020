@@ -19,7 +19,6 @@ const useStyles = makeStyles(() => {
       flexDirection: "column",
       justifyContent: "center",
       alignItems: "center",
-      backgroundColor: "#242424",
       color: "white",
     },
     horizontal: {
@@ -40,7 +39,7 @@ const useStyles = makeStyles(() => {
     },
     menuIcon: {
       color: "white",
-      padding: "16px 16px 0 16px"
+      padding: "16px 16px 0 16px",
     },
 
     // MoneyMask
@@ -72,8 +71,14 @@ const Valor = (props) => {
   };
 
   return (
-    <div style={{textAlign: "left", background: "#242424"}}>
-      <MenuRoundedIcon className={classes.menuIcon}/>
+    <div
+      style={{
+        textAlign: "left",
+        background: "#242424",
+        borderRadius: "0px 0px 8px 8px",
+      }}
+    >
+      <MenuRoundedIcon className={classes.menuIcon} />
       <Box className={classes.root}>
         <p className={classes.title}>Olá, Ronaldo</p>
         <Box className={classes.horizontal}>
