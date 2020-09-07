@@ -1,16 +1,11 @@
 import React from "react";
-import MenuInferior from "../../components/MenuInferior";
 import "./objetivos.css";
+import MenuInferior from "../../components/MenuInferior";
+import Objetivo from "../../components/Objetivo";
 import BotaoNovoObjetivo from "../../components/BotaoNovoObjetivo";
 import Titulo from "../../components/Titulo";
-import Objetivo from "../../components/Objetivo";
 
 const Objetivos = () => {
-  const novoObjetivo = () => {
-    alert("NOVO OBJETIVO");
-    // TODO
-  };
-
   return (
     <body>
       <header>
@@ -18,7 +13,6 @@ const Objetivos = () => {
       </header>
       <main>
         <div>
-        
           <Objetivo
             nome="Comprar minha combi"
             data="em 31 de Março de 2021"
