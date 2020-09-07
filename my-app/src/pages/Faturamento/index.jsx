@@ -5,6 +5,7 @@ import "./faturamento.css";
 import CardInfo from "../../components/CardInfo";
 import Box from "@material-ui/core/Box";
 import { Button, makeStyles } from "@material-ui/core";
+import { Link } from "react-router-dom";
 
 const useStyles = makeStyles(() => {
   return {
@@ -42,7 +43,9 @@ const Faturamento = () => {
         <CardInfo>
           <Box>
             Resumo de pagamento <strong>DAS</strong> mensal
-            <Button className={classes.button}>Consultar</Button>
+            <Link to="/das" style={{ textDecoration: "none" }}>
+              <Button className={classes.button}>Consultar</Button>
+            </Link>
           </Box>
         </CardInfo>
       </main>

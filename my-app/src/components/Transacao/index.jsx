@@ -9,6 +9,7 @@ const useStyles = makeStyles(() => {
     wrapper: {
       display: "flex",
       justifyContent: "space-between",
+      alignItems: "center",
     },
     box1: {
       textAlign: "left",

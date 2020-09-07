@@ -20,8 +20,7 @@ const Objetivos = () => {
           backgroundColor: "#242424",
           color: "white",
           paddingBottom: "16px",
-          borderBottomRightRadius: "4px",
-          borderBottomLeftRadius: "4px",
+          borderRadius: "0 0 8px 8px",
         }}
       >
         <MenuRoundedIcon style={{ padding: "16px 0 0 16px" }} />

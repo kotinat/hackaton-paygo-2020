@@ -94,8 +94,7 @@ const useStyles = makeStyles(() => {
       padding: "16px 0",
       background: "#242424",
       color: "#FFFFFF",
-      borderBottomRightRadius: "16px",
-      borderBottomLeftRadius: "16px",
+      borderRadius: "0px 0px 8px 8px",
     },
     currentBox: {
       height: "100%",
@@ -137,7 +136,7 @@ const Das = () => {
     <body>
       <header className={classes.header}>
         <MenuRoundedIcon style={{ padding: "16px 0 0 16px" }} />
-        <Titulo texto="Meus pagamentos DAS" />
+        <Titulo texto="Meus DAS" />
       </header>
 
       <main style={{ textAlign: "center" }}>
