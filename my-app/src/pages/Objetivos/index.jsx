@@ -18,28 +18,35 @@ const Objetivos = () => {
       <main>
         <div>
           <Objetivo
-            nome="Comprar minha combi"
+            nome="Compra da combi"
             data="em 31 de Março de 2021"
             total="10.000,00"
-            valorAtual="1.000,00"
+            valorAtual="1.200,00"
+            tipo="Pessoal"  
+
           />
           <Objetivo
-            nome="Comprar minha combi"
-            data="em 31 de Março de 2021"
-            total="10.000,00"
-            valorAtual="1.000,00"
+            nome="Ar Condicionado"
+            data="em 27 de Dezembro de 2020"
+            total="4.000,00"
+            valorAtual="2.200,00"
+            tipo="Profissional"  
           />
           <Objetivo
-            nome="Comprar minha combi"
-            data="em 31 de Março de 2021"
-            total="10.000,00"
-            valorAtual="1.000,00"
+            nome="Mesa de escretório"
+            data="em 5 de Outubro de 2020"
+            total="1.000,00"
+            valorAtual="850,00"
+            tipo="Profissional"  
+
           />
           <Objetivo
-            nome="Comprar minha combi"
-            data="em 31 de Março de 2021"
-            total="10.000,00"
-            valorAtual="1.000,00"
+            nome="PC pro Bernardo"
+            data="em 8 de Janeiro de 2021"
+            total="7.000,00"
+            valorAtual="2.300,00"
+            tipo="Pessoal"  
+
           />
         </div>
 

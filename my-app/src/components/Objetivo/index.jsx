@@ -2,6 +2,8 @@ import React from "react";
 import { makeStyles, withStyles } from "@material-ui/core/styles";
 import { Card } from "@material-ui/core";
 import LinearProgress from "@material-ui/core/LinearProgress";
+import Tag from "../Tag";
+import EditButton from "../EditButton";
 
 const BorderLinearProgress = withStyles((theme) => ({
   root: {
@@ -23,6 +25,7 @@ const useStyles = makeStyles(() => {
       minHeight: "50px",
       margin: "16px",
       padding: "16px 16px 32px 16px",
+      textAlign: "left",
     },
     name: {
       textAlign: "left",
@@ -51,6 +54,10 @@ const useStyles = makeStyles(() => {
       fontWeight: "600",
       marginTop: "4px",
     },
+    spaceBetween: {
+      display: "flex",
+      justifyContent: "space-between",
+    },
   };
 });
 
@@ -58,6 +65,7 @@ const Objetivo = (props) => {
   const classes = useStyles();
 
   const name = props.nome;
+  const type = props.tipo.toString();
   const date = props.data;
   const amount = props.total;
   const current = props.valorAtual;
@@ -65,7 +73,11 @@ const Objetivo = (props) => {
 
   return (
     <Card elevation="4" className={classes.root}>
-      <p className={classes.name}>{name}</p>
+      <div className={classes.spaceBetween}>
+        <p className={classes.name}>{name}</p>
+        <EditButton />
+      </div>
+
       <p className={classes.date}>{date}</p>
 
       <p className={classes.amount}>
@@ -73,7 +85,7 @@ const Objetivo = (props) => {
         {amount}
       </p>
 
-      <div style={{display: "flex", justifyContent: "space-between"}}>
+      <div className={classes.spaceBetween}>
         <p className={classes.current}>
           <span style={{ fontSize: "12px" }}>
             Você acumulou: <b>R$</b>{" "}
@@ -83,7 +95,17 @@ const Objetivo = (props) => {
         <span className={classes.percentage}>{percentage}%</span>
       </div>
 
-      <BorderLinearProgress style={{marginTop: "4px"}} variant="determinate" value={percentage} />
+      <BorderLinearProgress
+        style={{ marginTop: "4px" }}
+        variant="determinate"
+        value={percentage}
+      />
+      <br />
+      {type.toLowerCase() == "pessoal" ? (
+        <Tag text={type} background="#EEB866" />
+      ) : (
+        <Tag text={type} background="#2196f3" color="white" />
+      )}
     </Card>
   );
 };
@@ -92,7 +114,7 @@ function extractPercentage(current, amount) {
   let currentFloat = parseFloat(current.replace(".", "").replace(",", "."));
   let amountFloat = parseFloat(amount.replace(".", "").replace(",", "."));
 
-  return (currentFloat * 100) / amountFloat;
+  return Math.round((currentFloat * 100) / amountFloat);
 }
 
 export default Objetivo;

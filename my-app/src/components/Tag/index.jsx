@@ -9,10 +9,10 @@ const useStyles = makeStyles(() => {
     },
   };
 });
-const Tag = ({ text, color }) => {
+const Tag = ({ text, background, color }) => {
   const classes = useStyles();
   return (
-    <Chip label={text} style={{ background: color }} className={classes.chip} />
+    <Chip label={text} style={{ background: background, color: color}} className={classes.chip} />
   );
 };
 
