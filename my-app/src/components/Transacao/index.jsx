@@ -1,6 +1,7 @@
 import React from "react";
 import Box from "@material-ui/core/Box";
 import { makeStyles } from "@material-ui/core/styles";
+import Tag from "../Tag";
 import "./transacao.css";
 
 const useStyles = makeStyles(() => {
@@ -26,7 +27,7 @@ const Transacao = ({ props }) => {
         <Box className={classes.box1}>
           <p id="pagamento valor1">{props.pagamento}</p>
           <p id="descricao">{props.descricao}</p>
-          <p id="tag">{props.tag}</p>
+          <Tag text={props.tag} background={props.tagCor} />
         </Box>
         <Box className={classes.box2}>
           <p id="valor">{props.valor}</p>

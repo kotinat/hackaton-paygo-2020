@@ -8,7 +8,7 @@ const useStyles = makeStyles(() => {
     button: {
       width: "32px",
       height: "32px",
-      background: "#adadad",
+      background: "#777777",
     },
     icon: {
       color: "white",

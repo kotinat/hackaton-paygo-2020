@@ -30,7 +30,7 @@ const Objetivos = () => {
       <main>
         <div>
           <Objetivo
-            nome="Compra da combi"
+            nome="Compra da kombi"
             data="em 31 de Março de 2021"
             total="10.000,00"
             valorAtual="1.200,00"
@@ -44,7 +44,7 @@ const Objetivos = () => {
             tipo="Profissional"
           />
           <Objetivo
-            nome="Mesa de escretório"
+            nome="Mesa de escritório"
             data="em 5 de Outubro de 2020"
             total="1.000,00"
             valorAtual="850,00"

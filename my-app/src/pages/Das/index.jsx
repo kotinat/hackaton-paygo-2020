@@ -12,7 +12,7 @@ const das = [
     mes: "Janeiro",
     vencimento: "20/01/2020",
     status: "PAGO",
-    cor: "#4caf50",
+    cor: "#69ec76",
     value: "R$53,65",
   },
   {
@@ -28,7 +28,7 @@ const das = [
     mes: "Março",
     vencimento: "20/03/2020",
     status: "PAGO",
-    cor: "#4caf50",
+    cor: "#69ec76",
     value: "R$53,68",
   },
   {
@@ -44,7 +44,7 @@ const das = [
     mes: "Maio",
     vencimento: "20/05/2020",
     status: "PAGO",
-    cor: "#4caf50",
+    cor: "#69ec76",
     value: "R$53,68",
   },
   {
@@ -52,7 +52,7 @@ const das = [
     mes: "Junho",
     vencimento: "20/06/2020",
     status: "PAGO",
-    cor: "#4caf50",
+    cor: "#69ec76",
     value: "R$53,68",
   },
   {
@@ -60,7 +60,7 @@ const das = [
     mes: "Julho",
     vencimento: "20/07/2020",
     status: "PAGO",
-    cor: "#4caf50",
+    cor: "#69ec76",
     value: "R$53,70",
   },
   {
@@ -68,7 +68,7 @@ const das = [
     mes: "Agosto",
     vencimento: "20/08/2020",
     status: "PAGO",
-    cor: "#4caf50",
+    cor: "#69ec76",
     value: "R$53,70",
   },
   {
