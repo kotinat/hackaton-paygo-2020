@@ -5,6 +5,7 @@ import BottomNavigationAction from "@material-ui/core/BottomNavigationAction";
 import GpsFixedIcon from "@material-ui/icons/GpsFixed";
 import MonetizationOnIcon from "@material-ui/icons/MonetizationOn";
 import FormatListBulletedIcon from "@material-ui/icons/FormatListBulleted";
+import ReceiptIcon from "@material-ui/icons/Receipt";
 import { Link } from "react-router-dom";
 
 const useStyles = makeStyles(() => {
@@ -61,6 +62,15 @@ const MenuInferior = () => {
         <BottomNavigationAction
           label="Objetivos"
           icon={<GpsFixedIcon />}
+          //   className={classes.unselectedIcon}
+          value={value}
+          showLabel
+        />
+      </Link>
+      <Link to="/das" className={classes.link}>
+        <BottomNavigationAction
+          label="DAS"
+          icon={<ReceiptIcon />}
           //   className={classes.unselectedIcon}
           value={value}
           showLabel
