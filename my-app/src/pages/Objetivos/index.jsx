@@ -6,6 +6,10 @@ import BotaoNovoObjetivo from "../../components/BotaoNovoObjetivo";
 import Titulo from "../../components/Titulo";
 
 const Objetivos = () => {
+  const novoObjetivo = () => {
+    alert("Novo objetivo")
+  }
+
   return (
     <body>
       <header>
