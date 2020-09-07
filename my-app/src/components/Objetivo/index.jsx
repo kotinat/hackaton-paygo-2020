@@ -101,7 +101,7 @@ const Objetivo = (props) => {
         value={percentage}
       />
       <br />
-      {type.toLowerCase() == "pessoal" ? (
+      {type.toLowerCase() === "pessoal" ? (
         <Tag text={type} background="#EEB866" />
       ) : (
         <Tag text={type} background="#2196f3" color="white" />
