@@ -44,7 +44,7 @@ const MenuInferior = () => {
         <BottomNavigationAction
           label="Transações"
           icon={<FormatListBulletedIcon />}
-          className={classes.selectedIcon}
+          className={classes.unselectedIcon}
           value={value}
           showLabel
         />
@@ -53,7 +53,7 @@ const MenuInferior = () => {
         <BottomNavigationAction
           label="Faturamento"
           icon={<MonetizationOnIcon />}
-          className={classes.unselectedIcon}
+          className={classes.selectedIcon}
           value={value}
           showLabel
         />

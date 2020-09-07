@@ -29,14 +29,14 @@ const useStyles = makeStyles(() => {
       justifyContent: "center",
     },
     amount: {
-        margin: "0",
-        fontSize: "32px",
-        fontWeight: "100",
+      margin: "0",
+      fontSize: "32px",
+      fontWeight: "600",
     },
     amountLabel: {
-        margin: "0",
-        fontSize: "24px",
-        fontWeight: "600",
+      margin: "0",
+      fontSize: "24px",
+      fontWeight: "200",
     },
   };
 });
@@ -68,7 +68,6 @@ const Faturamento = (props) => {
         <p className={classes.amountLabel}>Faturamento</p>
         <p className={classes.amount}>{valor}</p>
       </Box>
-      
     </Box>
   );
 };
