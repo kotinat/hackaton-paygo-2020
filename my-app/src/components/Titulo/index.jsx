@@ -7,7 +7,7 @@ const useStyles = makeStyles(() => {
       fontSize: "28px",
       fontWeight: "500",
       textAlign: "left",
-      margin: "16px",
+      margin: "16px 16px 0px 16px",
     },
   };
 });

@@ -74,12 +74,13 @@ const das = [
 
 const useStyles = makeStyles(() => {
   return {
-    header: { display: "flex", alignItems: "center", paddingLeft: "16px" },
+    header: { display: "flex", alignItems: "center", paddingBottom: "16px" },
     current: {
       height: "96px",
       padding: "8px",
       borderRadius: "8px",
       border: "1px solid #cfd8dc",
+      margin: "0 16px"
     },
     currentBox: {
       height: "100%",
@@ -123,9 +124,10 @@ const Das = () => {
   return (
     <body>
       <header className={classes.header}>
-        <MenuRoundedIcon />
+        <MenuRoundedIcon style={{ padding: "16px 0 0 16px" }} />
         <Titulo texto="Meus Das" />
       </header>
+
       <main style={{ textAlign: "center" }}>
         <div className={classes.current}>
           <Box className={classes.currentBox}>

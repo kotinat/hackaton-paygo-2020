@@ -8,7 +8,7 @@ const useStyles = makeStyles(() => {
     button: {
       width: "32px",
       height: "32px",
-      background: "linear-gradient(105.23deg, #FFE552 0%, #FFCE2E 100%)",
+      background: "#adadad",
     },
     icon: {
       color: "white",

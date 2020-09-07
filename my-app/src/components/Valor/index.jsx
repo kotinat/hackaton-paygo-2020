@@ -2,6 +2,8 @@ import React, { useState } from "react";
 import { makeStyles } from "@material-ui/core/styles";
 import Box from "@material-ui/core/Box";
 import { IconButton } from "@material-ui/core";
+import MenuRoundedIcon from "@material-ui/icons/MenuRounded";
+
 import {
   Visibility,
   VisibilityOff,
@@ -11,9 +13,9 @@ import {
 const useStyles = makeStyles(() => {
   return {
     root: {
-      height: "80px",
-      padding: "56px 0px 84px 0px",
+      height: "100px",
       display: "flex",
+      paddingBottom: "32px",
       flexDirection: "column",
       justifyContent: "center",
       alignItems: "center",
@@ -36,10 +38,13 @@ const useStyles = makeStyles(() => {
     icon: {
       color: "white",
     },
+    menuIcon: {
+      color: "white",
+      padding: "16px 16px 0 16px"
+    },
 
     // MoneyMask
     dot: {
-      fontSize: "medium",
       margin: "18px 2px 0 2px",
     },
   };
@@ -67,24 +72,27 @@ const Valor = (props) => {
   };
 
   return (
-    <Box className={classes.root}>
-      <p className={classes.title}>Olá, Ronaldo</p>
-      <Box className={classes.horizontal}>
-        {moneyVisibility ? (
-          <p className={classes.amount}>{props.dinheiro}</p>
-        ) : (
-          <MoneyMask />
-        )}
-
-        <IconButton onClick={changeMoneyVisibility}>
+    <div style={{textAlign: "left", background: "#242424"}}>
+      <MenuRoundedIcon className={classes.menuIcon}/>
+      <Box className={classes.root}>
+        <p className={classes.title}>Olá, Ronaldo</p>
+        <Box className={classes.horizontal}>
           {moneyVisibility ? (
-            <Visibility className={classes.icon} />
+            <p className={classes.amount}>{props.dinheiro}</p>
           ) : (
-            <VisibilityOff className={classes.icon} />
+            <MoneyMask />
           )}
-        </IconButton>
+
+          <IconButton onClick={changeMoneyVisibility}>
+            {moneyVisibility ? (
+              <Visibility className={classes.icon} />
+            ) : (
+              <VisibilityOff className={classes.icon} />
+            )}
+          </IconButton>
+        </Box>
       </Box>
-    </Box>
+    </div>
   );
 };
 

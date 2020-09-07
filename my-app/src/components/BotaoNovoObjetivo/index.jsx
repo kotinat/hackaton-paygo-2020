@@ -6,7 +6,7 @@ import { Add as AddIcon } from "@material-ui/icons";
 const useStyles = makeStyles(() => {
   return {
     fab: {
-      position: "absolute",
+      position: "fixed",
       bottom: "72px",
       right: "16px",
     },
