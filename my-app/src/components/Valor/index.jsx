@@ -27,12 +27,12 @@ const useStyles = makeStyles(() => {
     title: {
       margin: "0px",
       fontSize: "26px",
-      fontWeight: "600",
+      fontWeight: "200",
     },
     amount: {
       margin: "0px",
       fontSize: "38px",
-      fontWeight: "100",
+      fontWeight: "600",
     },
     icon: {
       color: "white",

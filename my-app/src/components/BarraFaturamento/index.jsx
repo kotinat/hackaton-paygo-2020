@@ -33,7 +33,7 @@ const BarraFaturamento = () => {
         <MenuRoundedIcon className={classes.menuIcon} />
       </div>
       <Box className={classes.root}>
-        <Faturamento valor="R$ 60.000,00" progresso="30" />
+        <Faturamento valor="R$ 60.000,00" progresso="74" />
       </Box>
     </div>
   );
