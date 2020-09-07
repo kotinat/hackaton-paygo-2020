@@ -4,6 +4,7 @@ import FiltroMensal from "../../../src/components/FiltroMensal";
 import BarraFiltroBotao from "../../components/BarraFiltroBotao";
 import MenuInferior from "../../components/MenuInferior";
 import Transacao from "../../components/Transacao";
+import BotaoNovaDespesa from "../../components/BotaoNovaDespesa";
 import "./transacoes.css";
 
 const payloadTrx = [
@@ -67,6 +68,10 @@ const payloadTrx = [
 ];
 
 const Transacoes = () => {
+  const novaDespesa = () => {
+    alert("Nova despesa!");
+  };
+
   return (
     <body>
       <header>
@@ -80,6 +85,11 @@ const Transacoes = () => {
             return <Transacao key={trx.id} props={trx} />;
           })}
         </ul>
+        <BotaoNovaDespesa
+          onClick={novaDespesa}
+          background="black"
+          color="white"
+        />
       </main>
       <footer>
         <MenuInferior />

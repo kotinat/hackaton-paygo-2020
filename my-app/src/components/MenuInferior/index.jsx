@@ -20,7 +20,7 @@ const useStyles = makeStyles(() => {
       color: "#242424",
     },
     unselectedIcon: {
-      color: "rgba(36,36,36,0.4)",
+      color: "rgba(36,36,36,0.5)",
     },
     link: { textDecoration: "none" },
   };
@@ -44,7 +44,7 @@ const MenuInferior = () => {
         <BottomNavigationAction
           label="Transações"
           icon={<FormatListBulletedIcon />}
-          //   className={classes.selectedIcon}
+          className={classes.selectedIcon}
           value={value}
           showLabel
         />
@@ -53,16 +53,7 @@ const MenuInferior = () => {
         <BottomNavigationAction
           label="Faturamento"
           icon={<MonetizationOnIcon />}
-          //   className={classes.unselectedIcon}
-          value={value}
-          showLabel
-        />
-      </Link>
-      <Link to="/objetivos" className={classes.link}>
-        <BottomNavigationAction
-          label="Objetivos"
-          icon={<GpsFixedIcon />}
-          //   className={classes.unselectedIcon}
+          className={classes.unselectedIcon}
           value={value}
           showLabel
         />
@@ -71,7 +62,16 @@ const MenuInferior = () => {
         <BottomNavigationAction
           label="DAS"
           icon={<ReceiptIcon />}
-          //   className={classes.unselectedIcon}
+          className={classes.unselectedIcon}
+          value={value}
+          showLabel
+        />
+      </Link>
+      <Link to="/objetivos" className={classes.link}>
+        <BottomNavigationAction
+          label="Objetivos"
+          icon={<GpsFixedIcon />}
+          className={classes.unselectedIcon}
           value={value}
           showLabel
         />
