@@ -12,75 +12,90 @@ const das = [
     mes: "Janeiro",
     vencimento: "20/01/2020",
     status: "PAGO",
-    cor: "#00bfa5",
+    cor: "#4caf50",
+    value: "R$53,65",
   },
   {
     id: 2,
     mes: "Fevereiro",
     vencimento: "20/02/2020",
     status: "ATRASADO",
-    cor: "#c62828",
+    cor: "#f44336",
+    value: "R$53,65",
   },
   {
     id: 3,
     mes: "Março",
     vencimento: "20/03/2020",
     status: "PAGO",
-    cor: "#00bfa5",
+    cor: "#4caf50",
+    value: "R$53,68",
   },
   {
     id: 4,
     mes: "Abril",
     vencimento: "20/04/2020",
     status: "ATRASADO",
-    cor: "#c62828",
+    cor: "#f44336",
+    value: "R$53,68",
   },
   {
     id: 5,
     mes: "Maio",
     vencimento: "20/05/2020",
     status: "PAGO",
-    cor: "#00bfa5",
+    cor: "#4caf50",
+    value: "R$53,68",
   },
   {
     id: 6,
     mes: "Junho",
     vencimento: "20/06/2020",
     status: "PAGO",
-    cor: "#00bfa5",
+    cor: "#4caf50",
+    value: "R$53,68",
   },
   {
     id: 7,
     mes: "Julho",
     vencimento: "20/07/2020",
     status: "PAGO",
-    cor: "#00bfa5",
+    cor: "#4caf50",
+    value: "R$53,70",
   },
   {
     id: 8,
     mes: "Agosto",
     vencimento: "20/08/2020",
     status: "PAGO",
-    cor: "#00bfa5",
+    cor: "#4caf50",
+    value: "R$53,70",
   },
   {
     id: 9,
     mes: "Setembro",
     vencimento: "20/09/2020",
     status: "EM ABERTO",
-    cor: "#ffd54f",
+    cor: "#ffc107",
+    value: "R$53,70",
   },
 ];
 
 const useStyles = makeStyles(() => {
   return {
-    header: { display: "flex", alignItems: "center", paddingBottom: "16px" },
+    header: {
+      display: "flex",
+      alignItems: "center",
+      background: "#242424",
+      color: "#FFFFFF",
+    },
     current: {
-      height: "96px",
-      padding: "8px",
-      borderRadius: "8px",
-      border: "1px solid #cfd8dc",
-      margin: "0 16px"
+      height: "112px",
+      padding: "16px 0",
+      background: "#242424",
+      color: "#FFFFFF",
+      borderBottomRightRadius: "16px",
+      borderBottomLeftRadius: "16px",
     },
     currentBox: {
       height: "100%",
@@ -90,10 +105,10 @@ const useStyles = makeStyles(() => {
     },
     currentValue: {
       fontSize: "40px",
-      color: "#00bfa5",
+      color: "#ffc107",
     },
     currentStatus: {
-      color: "#00bfa5",
+      color: "#ffc107",
       margin: 0,
     },
     menuYear: {
@@ -107,13 +122,10 @@ const useStyles = makeStyles(() => {
       display: "flex",
       alignItems: "center",
       justifyContent: "space-between",
-      margin: "2px 16px",
+      margin: "0 16px",
       padding: "16px",
-      borderRadius: "4px",
-      border: "1px solid #cfd8dc",
     },
     boxLeft: {
-      paddingLeft: "8px",
       textAlign: "left",
     },
   };
@@ -125,7 +137,7 @@ const Das = () => {
     <body>
       <header className={classes.header}>
         <MenuRoundedIcon style={{ padding: "16px 0 0 16px" }} />
-        <Titulo texto="Meus Das" />
+        <Titulo texto="Meus pagamentos DAS" />
       </header>
 
       <main style={{ textAlign: "center" }}>
@@ -133,7 +145,7 @@ const Das = () => {
           <Box className={classes.currentBox}>
             <strong>DAS setembro 2020</strong>
             <strong className={classes.currentValue}>R$53,70</strong>
-            <p className={classes.currentStatus}>Pago</p>
+            <p className={classes.currentStatus}>Em aberto</p>
           </Box>
         </div>
         <Box className={classes.menuYear}>
@@ -152,8 +164,12 @@ const Das = () => {
                   <strong>{item.mes}</strong>
                   <p>{item.vencimento}</p>
                 </div>
-
-                <p style={{ color: `${item.cor}` }}>{item.status}</p>
+                <div style={{ textAlign: "right" }}>
+                  <p style={{ color: `${item.cor}` }}>{item.status}</p>
+                  <p style={{ fontSize: "14px", color: "#555555" }}>
+                    {item.value}
+                  </p>
+                </div>
               </div>
             );
           })}

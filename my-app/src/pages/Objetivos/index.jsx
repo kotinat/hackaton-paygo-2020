@@ -13,7 +13,17 @@ const Objetivos = () => {
 
   return (
     <body>
-      <header style={{ display: "flex", alignItems: "center" }}>
+      <header
+        style={{
+          display: "flex",
+          alignItems: "center",
+          backgroundColor: "#242424",
+          color: "white",
+          paddingBottom: "16px",
+          borderBottomRightRadius: "4px",
+          borderBottomLeftRadius: "4px",
+        }}
+      >
         <MenuRoundedIcon style={{ padding: "16px 0 0 16px" }} />
         <Titulo texto="Meus Objetivos" />
       </header>
